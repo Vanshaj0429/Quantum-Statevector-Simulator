@@ -44,9 +44,13 @@ Quantum computing leverages the principles of quantum mechanics to perform compu
 
 ## Usage 
 
+**For best experience use the .pynb file in src**
+
+**Another way reviewing code is given below**
+
 **Simulating a Quantum Circuit with Matrix Multiplication**
 
-    from src.simulator import simulate_circuit_matrix
+    from src.Naive-Matrix import simulate_circuit_matrix
 
     n_qubits = 3
     final_state = simulate_circuit_matrix(n_qubits)
@@ -55,7 +59,7 @@ Quantum computing leverages the principles of quantum mechanics to perform compu
 
 **Simulating a Quantum Circuit with Tensor Multiplication**
 
-    from src.simulator import simulate_circuit_tensor
+    from src.Advanced-Tensor import simulate_circuit_tensor
 
     n_qubits = 3
     final_state = simulate_circuit_tensor(n_qubits)
@@ -64,8 +68,8 @@ Quantum computing leverages the principles of quantum mechanics to perform compu
 
 **Sampling Measurements**
 
-    from src.simulator import simulate_circuit_tensor
-    from src.utils import sample_measurements
+    from src.Advanced-Tensor import simulate_circuit_tensor
+    from src.Bonus import sample_measurements
 
     n_qubits = 3
     state = simulate_circuit_tensor(n_qubits)
@@ -75,8 +79,8 @@ Quantum computing leverages the principles of quantum mechanics to perform compu
 
 **Computing Expectation Values**
 
-    from src.simulator import simulate_circuit_tensor
-    from src.utils import compute_expectation_value
+    from src.Advanced-Tensor import simulate_circuit_tensor
+    from src.Bonus import compute_expectation_value
     import numpy as np
 
     n_qubits = 3
@@ -93,13 +97,9 @@ Refer to the notebooks directory for detailed examples and explanations.
 
 ## Performance
 
-The simulator includes runtime analysis comparing naive matrix multiplication and tensor multiplication methods. See the generated plots in the plots directory.
+The simulator includes runtime analysis comparing naive matrix multiplication and tensor multiplication methods. See the generated plots in the plots directory. Also if you go through the notebook then can check the plots there as well.
 
-## Testing
 
-To ensure the correctness of the simulator, run the unit tests provided.
-
-    python -m unittest discover tests
 
 
 
