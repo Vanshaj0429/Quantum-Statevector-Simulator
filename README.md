@@ -44,7 +44,7 @@ Quantum computing leverages the principles of quantum mechanics to perform compu
 
 ## Usage 
 
-**For best experience use the .pynb file in src**
+**For best experience use the .pynb file**
 
 **Another way reviewing code is given below**
 
